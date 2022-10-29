@@ -1,0 +1,7 @@
+{
+  "name": "LswProject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
