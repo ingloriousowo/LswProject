@@ -4,7 +4,7 @@
     <ion-menu side="start" contentId="main" menuId="first" side="start" type="overlay">
       <ion-header>
         <ion-toolbar>
-          <ion-title mode="md">LsW News</ion-title>
+          <ion-title mode="md">Menú</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
@@ -17,6 +17,18 @@
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
+
+      <ion-footer>
+        <ion-toolbar>
+          <ion-title mode="md">LsW News</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="clickGithub()">
+              <ion-icon slot="icon-only" name="logo-github"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
+
     </ion-menu>
   
 
