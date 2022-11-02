@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "home-outline",
+        "name": "Inicio",
+        "redirectTo": "/inicio"
+    },
+    {
+        "icon":"star-outline",
+        "name":"Favoritos",
+        "redirectTo":"/favoritos"
+    },
+    {
+        "icon":"construct-outline",
+        "name":"Opciones",
+        "redirectTo":"/opciones"
+    }
+]
