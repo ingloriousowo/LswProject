@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StorageService } from '../../services/storage.service';
+import { News } from '../../interfaces/interfaces';
 
 @Component({
   selector: 'app-favoritos',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritosPage implements OnInit {
 
-  constructor() { }
+  get noticias(): News[]{
+    return this.storageService.GetnoticiasLocales;
+  }
+
+  constructor( private storageService: StorageService) { }
+
+  
 
   ngOnInit() {
   }

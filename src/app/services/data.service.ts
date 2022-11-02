@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Componente } from '../interfaces/interfaces';
+import { Componente, News } from '../interfaces/interfaces';
 
 
 @Injectable({
@@ -12,5 +12,9 @@ export class DataService {
 
   getOpcionesMenu(){
     return this.http.get<Componente[]>('/assets/data/menu-opts.json')
+  }
+
+  getNoticias(){
+    return this.http.get<News[]>('https://lsw-news-default-rtdb.firebaseio.com/Noticias.json');
   }
 }
