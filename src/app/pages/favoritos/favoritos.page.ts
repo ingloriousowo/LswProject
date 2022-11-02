@@ -20,4 +20,12 @@ export class FavoritosPage implements OnInit {
   ngOnInit() {
   }
 
+  hayFavoritos(): boolean{
+    if(this.noticias.length == 0){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
 }
